@@ -26,7 +26,7 @@ const Navbar = () => {
                     </span>
                     <span className='flex items-center pt-5'>
                         <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
-                        <Link>All Sir</Link> <br />
+                        <Link to="/teacher">All Sir</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
                         <AiFillHome className='text-[25px] mr-2' ></AiFillHome>

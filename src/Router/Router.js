@@ -4,6 +4,7 @@ import Home from "../Components/Home/Home";
 import Layout from "../Layout/Layout"
 import Success from "../Components/Success/Success";
 import Gallery from "../Components/Gallery/Gallery";
+import Teacher from "../Components/Teacher/Teacher";
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,12 @@ const router = createBrowserRouter([
             {
                 path: "/gallery",
                 element: <Gallery></Gallery>,
+            },
+            {
+                path: "/teacher",
+                element: <Teacher></Teacher>,
+                loader: () => fetch("http://localhost:5000/user")
+
             }
         ]
     }
