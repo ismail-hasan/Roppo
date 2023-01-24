@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { FaFacebook } from 'react-icons/fa';
 import "./Student.css"
 
 const Student = () => {
     const students = useLoaderData()
-
+    const [search, setSearch] = useState("")
+    // console.log(search)
+    console.log(students.filter(student => student.name.toLowerCase().includes("IS")))
     return (
         <div>
             <div className='flex justify-between mt-4 text-white'>
                 <h1 className='text-[22px] capitalize'>All student hare</h1>
-                <input className='search-input' type="text" placeholder='Search Hare' />
+                <input onChange={e => setSearch(e.target.value)} className='search-input' type="text" placeholder='Search Hare' />
             </div>
             <div className='hello grid grid-cols-3 mt-5 gap-7 overflow-y-scroll h-96'>
                 {
-                    students.map((student, idx) => {
+                    students.filter(stu => stu.name.toLowerCase().includes(search)).map((student, idx) => {
                         return (
                             <div className='userCard text-white text-center' key={idx} >
                                 <div className='flex justify-center'>
@@ -27,7 +29,7 @@ const Student = () => {
                                     <FaFacebook></FaFacebook>
                                     <FaFacebook></FaFacebook>
                                 </div>
-                                <button class="btn"><Link href="#">See More</Link></button>
+                                <button className="btn"><Link href="#">See More</Link></button>
                             </div>
 
                         )
