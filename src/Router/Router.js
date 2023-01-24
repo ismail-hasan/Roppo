@@ -17,7 +17,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <Student></Student>
+                element: <Student></Student>,
+                loader: () => fetch("http://localhost:5000/user")
             },
             {
                 path: "/success",
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/gallery",
-                element: <Gallery></Gallery>
+                element: <Gallery></Gallery>,
             }
         ]
     }
