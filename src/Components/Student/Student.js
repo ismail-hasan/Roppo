@@ -16,7 +16,7 @@ const Student = () => {
             </div>
             <div className='hello grid grid-cols-3 mt-5 gap-7 overflow-y-scroll h-96'>
                 {
-                    students.filter(stu => stu.name.toLowerCase().includes(search)).map((student, idx) => {
+                    students.filter(stu => stu?.name.toLowerCase().includes(search) ).map((student, idx) => {
                         return (
                             <div className='userCard text-white text-center' key={idx} >
                                 <div className='flex justify-center'>
