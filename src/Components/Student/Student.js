@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { FaFacebook } from 'react-icons/fa';
-import Tilt from 'react-vanilla-tilt'
 import "./Student.css"
 
 const Student = () => {
