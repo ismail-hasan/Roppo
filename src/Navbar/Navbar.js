@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillHome } from 'react-icons/ai';
+import { BiHappyAlt } from 'react-icons/bi';
+import { GiTeacher } from 'react-icons/gi';
+import { TfiGallery } from 'react-icons/tfi';
+import { FaUserTie } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
@@ -17,19 +21,19 @@ const Navbar = () => {
                         <Link to="/home">Home</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
-                        <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
+                        <FaUserTie className='text-[25px] mr-2' ></FaUserTie>
                         <Link to="/about">All Students</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
-                        <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
+                        <TfiGallery className='text-[25px] mr-2' ></TfiGallery>
                         <Link to="/gallery">Gallery</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
-                        <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
+                        <GiTeacher className='text-[25px] mr-2' ></GiTeacher>
                         <Link to="/teacher">All Sir</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
-                        <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
+                        <BiHappyAlt className='text-[25px] mr-2' ></BiHappyAlt>
                         <Link to="/success">Success Student</Link> <br />
                     </span>
 

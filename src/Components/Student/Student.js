@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { FaFacebook } from 'react-icons/fa';
 import Tilt from 'react-vanilla-tilt'
 import "./Student.css"
@@ -28,7 +28,7 @@ const Student = () => {
                                     <FaFacebook></FaFacebook>
                                     <FaFacebook></FaFacebook>
                                 </div>
-                                <button className='mt-5 border text-[18px] border-white py-1 rounded-[30px] px-5'>See More</button>
+                                <button class="btn"><Link href="#">See More</Link></button>
                             </div>
 
                         )
