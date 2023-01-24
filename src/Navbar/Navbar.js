@@ -22,15 +22,16 @@ const Navbar = () => {
                     </span>
                     <span className='flex items-center pt-5'>
                         <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
-                        <Link>Gellery</Link> <br />
+                        <Link to="/gallery">Gallery</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
                         <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
                         <Link>All Sir</Link> <br />
                     </span>
-                    <div>
-                        <h1>how arre you</h1>
-                    </div>
+                    <span className='flex items-center pt-5'>
+                        <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
+                        <Link to="/success">Success Student</Link> <br />
+                    </span>
 
                 </ul>
             </div>

@@ -10,7 +10,7 @@ const main = () => {
                 <div className='left-section w-[25%]'>
                     <Navbar></Navbar>
                 </div>
-                <div className='right-section w-full px-20'>
+                <div className='right-section w-[75%] px-20'>
                     <Outlet></Outlet>
                 </div>
             </div>
