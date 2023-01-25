@@ -10,7 +10,7 @@ const main = () => {
                 <div className='left-section w-[20%] z-10'>
                     <Navbar></Navbar>
                 </div>
-                <div className='right-section w-[75%] pr-5'>
+                <div className='right-section w-[80%] pr-5'>
                     <Outlet></Outlet>
                 </div>
             </div>
