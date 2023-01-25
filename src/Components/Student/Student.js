@@ -14,9 +14,9 @@ const Student = () => {
                 <h1 className='text-[22px] capitalize'>All student hare</h1>
                 <input onChange={e => setSearch(e.target.value)} className='search-input' type="text" placeholder='Search Hare' />
             </div>
-            <div className='hello grid grid-cols-3 mt-5 gap-7 overflow-y-scroll h-96'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-7 overflow-y-scroll h-96'>
                 {
-                    students.filter(stu => stu?.name.toLowerCase().includes(search) ).map((student, idx) => {
+                    students.filter(stu => stu?.name.toLowerCase().includes(search)).map((student, idx) => {
                         return (
                             <div className='userCard text-white text-center' key={idx} >
                                 <div className='flex justify-center'>
