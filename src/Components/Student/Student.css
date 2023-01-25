@@ -24,14 +24,11 @@
 
 ::-webkit-scrollbar-track {
     background-color: #fff;
-
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #f00abe;
 }
-
-
 
 .btn {
     position: relative;

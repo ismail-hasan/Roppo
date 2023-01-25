@@ -6,8 +6,6 @@ import "./Student.css"
 const Student = () => {
     const students = useLoaderData()
     const [search, setSearch] = useState("")
-    // console.log(search)
-    console.log(students.filter(student => student.name.toLowerCase().includes("IS")))
     return (
         <div>
             <div className='flex justify-between mt-4 text-white'>
@@ -29,7 +27,9 @@ const Student = () => {
                                     <FaFacebook></FaFacebook>
                                     <FaFacebook></FaFacebook>
                                 </div>
-                                <button className="btn"><Link href="#">See More</Link></button>
+                                <button className="btn">
+                                    <Link to="/stu-details">See More</Link>
+                                </button>
                             </div>
 
                         )

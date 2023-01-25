@@ -5,6 +5,7 @@ import Layout from "../Layout/Layout"
 import Success from "../Components/Success/Success";
 import Gallery from "../Components/Gallery/Gallery";
 import Teacher from "../Components/Teacher/Teacher";
+import StuDetails from "../Components/StuDetails/StuDetails";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
             {
                 path: "/student",
                 element: <Student></Student>,
+                loader: () => fetch("http://localhost:5000/user")
+            },
+            {
+                path: "/stu-details",
+                element: <StuDetails></StuDetails>,
                 loader: () => fetch("http://localhost:5000/user")
             },
             {
