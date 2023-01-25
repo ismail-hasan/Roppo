@@ -20,9 +20,10 @@ const Navbar = () => {
                         <AiFillHome className='text-[25px] mr-2' ></AiFillHome>
                         <Link to="/home">Home</Link> <br />
                     </span>
+                   
                     <span className='flex items-center pt-5'>
                         <FaUserTie className='text-[25px] mr-2' ></FaUserTie>
-                        <Link to="/about">All Students</Link> <br />
+                        <Link to="/student">All Students</Link> <br />
                     </span>
                     <span className='flex items-center pt-5'>
                         <TfiGallery className='text-[25px] mr-2' ></TfiGallery>
