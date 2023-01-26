@@ -29,7 +29,9 @@ const router = createBrowserRouter([
             },
             {
                 path: "/success",
-                element: <Success></Success>
+                element: <Success></Success>,
+                loader: () => fetch("http://localhost:5000/user")
+
             },
             {
                 path: "/gallery",
